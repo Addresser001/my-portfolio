@@ -1,0 +1,1172 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+*:focus{
+    box-shadow: none !important;
+    outline: 0px;
+}
+
+
+
+
+.main-container{/* The main container  */
+
+    background-color: white;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.left-aside{/* The Left container, containing the profile picture and navigation buttons  */
+    width: 15%;
+    padding-bottom: 28px;
+    background-color:black;
+}
+
+.profile-pic-container{/* The profile picture container  */
+    background-image: url(/images/img-4.JPG);
+    width: 100%;
+    height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid white;
+    padding-top: 240px;
+}
+
+
+
+.profile-pic-name{/* The profile picture name container  */
+    width: 100%;
+    line-height: 5px;
+    padding: 5px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+    
+}
+.profile-pic-name h5{/* The profile picture name  */
+    font-weight: bold;
+    opacity: 1;
+    font-size: 15px;
+}
+
+
+
+
+.navigation-bar{/* The Navigation buttons container  */
+    width: 100%;
+    margin-top: 0px;
+}
+/* The Navigation buttons style  */
+ul li{
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid silver;
+}
+ul{
+    padding: 0px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: silver;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    transition-property: margin, color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    padding-left: 20px;
+
+}
+
+ul li a:hover{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+
+}
+
+ul li a:focus{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.tabs i{
+    font-size: 25px;
+}
+
+.social-media-icon-container{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.social-media-icons i{
+    font-size: 30px;
+    padding-left: 10px;
+}
+.social-media-icons{
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+.social-media-icons:hover{
+    color: blue;
+    border: 1px thin white;
+}
+
+.all-right-reserved{
+    color: white;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+/* The navigation buttons class, linked with javascript to acivate 'display:block;' & 'display:none;' */
+.panel{
+    display: none;
+}
+
+.panel.active{
+    display: block !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-aside{/* The right container, containing all the items to be displayed when any navigation button is clicked.  */
+    width: 83%;
+    height: 705px;
+    float: right;
+    background-color: black;
+    box-shadow: 1px 1px 8px black ;
+    margin-right: 16px;
+    margin-top: 15px;
+    
+}
+
+
+
+
+
+.d-block{/* For the Home display items, especially for the carosel images  */
+    height: 705px;
+    opacity: 0.5;
+}
+
+#first-auto-typewriting-text{
+    font-size: 68px;
+}
+#second-auto-typewriting-text{
+    font-size: 51px;
+}
+#third-auto-typewriting-text{
+    font-size: 58px;
+}
+
+/* The auto typewriting for the home page  */
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space:nowrap;
+    margin-bottom: 300px;
+    letter-spacing: 0px; 
+    width: 100%;
+    color: white;
+    animation: 
+        typing 4.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+
+
+
+
+/* About style */
+.about-text-container{
+    margin: 0px auto;
+    width: 80%;
+    position: relative;
+    bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.about-heading h2{/* About Heading style */
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-heading{/* About Heading container */
+    position: relative;
+    top: 60px;
+    color: silver;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid silver;
+    opacity:0;
+    animation-name: about-heading;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes about-heading{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.about-text1{/* About Main text-1 */
+    position: relative;
+    text-align: center;
+    animation-name: about-me1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes about-me1{
+    0%{top:-100px; opacity: 0;}
+    
+    100%{top: 150px; opacity: 1;}
+}
+
+.about-text2{/* About main text-2 */
+    position: relative;
+    top: 150px;
+    text-align: center;
+    animation-name: about-me2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes about-me2{
+    0%{left:800px;}
+    100%{left:0px;}
+}
+
+
+.about-footer{/* About footer container */
+    position: relative;
+    top: 130px;
+    color: blue;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid silver;
+    opacity:0;
+    animation-name: about-heading;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.about-footer-text{/* About footer text */
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.about-footer-text a{/* About inline text links */
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* Project styles */
+.project-row-1{/* project rows */
+    margin: 40px;
+    margin-top: 120px;
+}
+.project-row-2{/* project rows */
+    margin: 40px;
+    margin-top: 60px;
+}
+.card{/* project cards */
+    height: 200px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-title img{/* project card title images */
+    width: 40%;
+    height: 40px;
+}
+.card-text{
+    color: white;
+    font-weight: bold;
+}
+.btn{/* card buttons */
+    background-color: blue;
+    opacity: 0.8;
+}
+
+.card-1{/* Card-1 */
+    opacity: 0;
+    animation-name: projects-cards;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    background-image: url(/images/img-5.jpg) !important;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.card-text-1{
+    padding: 20px 0px;
+}
+
+
+
+.card-2{/* Card-2 */
+    opacity: 0;
+    animation-name: projects-cards;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    background-image: url(/images/img-6.jpg) !important;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-3{/* Card-3 */
+    opacity: 0;
+    animation-name: projects-cards;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.card-4{/* Card-4 */
+    opacity: 0;
+    animation-name: projects-cards;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.card-5{/* Card-5 */
+    opacity: 0;
+    animation-name: projects-cards;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.card-6{/* Card-6 */
+    opacity: 0;
+    animation-name: projects-cards;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes projects-cards{/* Cards animation */
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+
+
+
+
+
+
+
+
+/* Contact-me style */
+.form-container{
+    margin: 0px auto;
+    width: 35%;
+    padding: 20px;
+    margin-top: 120px;
+    background-color: white;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 50px 0px 50px 0px;
+    animation-name: form;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+@keyframes form{
+    0%{transform: rotateY(90deg);}
+}
+form{
+    width: 100%; 
+    text-align: center;
+}
+.form-title{
+    text-align: center;
+}
+.contact-input{
+    width: 100%;
+    height: 35px;
+    outline: 1px thin black;
+    padding: 10px;
+}
+label{
+    float:left;
+    margin-top: 10px;
+}
+textarea{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+}
+
+
+.form-button{
+    padding: 10px 40px;
+    background-color: transparent;
+    border: 0.5px solid green;
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+    transition-property: all;  
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;  
+}
+
+.form-button:hover{
+    background-color: green;
+    color: white;
+}
+
+
+
+
+
+
+/* Tablet view  */
+@media (max-width:1024px){
+
+    .main-container{/* The main container  */
+
+        background-color: white;
+        overflow: hidden;
+    }
+    
+    
+    
+    
+    
+    
+    .left-aside{/* The Left container, containing the profile picture and navigation buttons  */
+        width: 15%;
+        padding-bottom: 102px;
+        background-color:black;
+    }
+    
+    
+    .profile-pic-container{/* The profile picture container  */
+        background-image: url(/images/img-4.JPG);
+        width: 100%;
+        height: 150px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 5px solid white;
+        padding-top: 115px;
+    }
+    .profile-pic-name{/* The profile picture name container  */
+        width: 100%;
+        height: 30px;
+        line-height: 0px;
+        padding: 1px;
+    }
+    .profile-pic-name h5{/* The profile picture name  */
+        font-size: 10px;
+    }
+    .other-name{
+        font-size: 10px;  
+    }
+    
+    
+    
+
+    /* The Navigation buttons style  */
+    ul li{
+        padding: 5px;
+    }
+    
+    ul li a{
+        font-size: 10px;
+        padding-left: 5px;
+
+    }
+    
+
+    .tabs i{
+        font-size: 10px;
+    }
+    
+    .social-media-icon-container{
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+    .social-media-icons i{
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    .social-media-icons{
+        text-decoration: none;
+        color: white;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+    }
+    .social-media-icons:hover{
+        color: blue;
+        border: 1px thin white;
+    }
+    
+    .all-right-reserved{
+        color: white;
+        margin-left: 10px;
+        margin-top: 50px;
+        font-size: 10px;
+    }
+    
+    
+    
+    
+    
+    .right-aside{/* The right container, containing all the items to be displayed when any navigation button is clicked.  */
+        display: non;
+        width: 82%;
+        height: 540px;
+        float: right;
+        background-color: black;
+        box-shadow: 1px 1px 8px black ;
+        margin-right: 16px;
+        margin-top: 15px;
+    }
+    
+    
+    
+    
+    
+    .d-block{/* For the Home display items, especially for the carosel images  */
+        height: 540px;
+        opacity: 0.5;
+    }
+
+    #first-auto-typewriting-text{
+        font-size: 33.5px;
+    }
+    #second-auto-typewriting-text{
+        font-size: 25.5px;
+    }
+    #third-auto-typewriting-text{
+        font-size: 28.5px;
+    }
+    
+    /* The auto typewriting for the home page  */
+    .typewriter h1 {
+        margin-bottom: 260px;
+    }
+    
+ 
+    
+    
+    
+    
+    
+    /* About style */
+    .about-text-container{
+        position: relative;
+        bottom: 50px;
+        font-size: 20px;
+        
+    }
+    
+    .about-heading h2{/* About Heading style */
+        font-size: 30px;
+    }
+    
+    .about-heading{/* About Heading container */
+        position: relative;
+        top: 30px;
+    }
+    .about-text1{/* About Main text-1 */
+        position: relative;
+    }
+    
+    @keyframes about-me1{
+        0%{top:-100px; opacity: 0;}
+        
+        100%{top: 110px; opacity: 1;}
+    }
+    
+    .about-text2{/* About main text-2 */
+        position: relative;
+        top: 100px;
+    }
+    
+    
+    
+    .about-footer{/* About footer container */
+        position: relative;
+        top: 60px;
+    }
+    
+    .about-footer-text{/* About footer text */
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Project styles */
+    .project-row-1{/* project rows */
+        margin: 10px;
+        margin-top: 60px;
+    }
+
+    .project-row-2{/* project rows */
+        margin: 10px;
+        margin-top: 30px;
+    }
+    .card{/* project cards */
+        height: 190px;
+        font-size:10px;
+        transition-duration: 0s;
+        transition-timing-function: ease-in-out;
+    }
+    .card:hover{
+        transform: scale(1);
+    }
+
+    .card-title img{/* project card title images */
+        width: 50%;
+        height: 20px;
+    }
+    .card-title svg{
+        width: 50%;
+        height: 50px;
+    }
+
+    .card-text-1{
+        padding: 0px 0px;
+        font-size: 9px;
+    }
+    
+
+    
+
+
+
+
+
+
+
+    /* Contact-me style */
+    .form-container{
+        width: 45%;
+        margin-top: 50px;
+    }
+
+
+
+
+
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile view  */
+@media (max-width:767px){
+
+
+
+
+    .main-container{/* The main container  */
+
+        background-color: black;
+        overflow: visible;
+        padding-bottom: 1640px;
+    }
+    
+    
+    
+    
+    
+    
+    .left-aside{/* The Left container, containing the profile picture and navigation buttons  */
+        width: 100%;
+        padding-bottom: 200px;
+        background-color:transparent;
+        position: relative;
+        bottom: 705px;
+        
+    }
+    
+    .profile-pic-container{/* The profile picture container  */
+        background-image: url(/images/img-4.JPG);
+        width: 60%;
+        height: 250px;
+        border-radius: 100px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 5px solid white;
+        padding-top: 200px;
+        overflow: hidden;
+    }
+    
+    
+    
+    .profile-pic-name{/* The profile picture name container  */
+        width: 100%;
+        height: 40px;
+        line-height: 0px;
+        padding: 5px;
+        background-color: blue;
+        text-align: center;
+        color: white;
+        opacity: 0.8;
+        
+    }
+ 
+    .profile-pic-name h5{/* The profile picture name  */
+        font-weight: bold;
+        opacity: 1;
+        font-size: 12px;
+    }
+    
+    
+    
+    
+    .navigation-bar{/* The Navigation buttons container  */
+        width: 100%;
+        height: 50px;
+        margin-top: 0px;
+        position: fixed;
+    }
+    /* The Navigation buttons style  */
+    
+    ul{
+        display: none;
+        padding: 0px;
+    }
+    
+        
+    
+    /* The navigation buttons class, linked with javascript to acivate 'display:block;' & 'display:none;' */
+    .panel{
+        display: block;
+    }
+    
+    .panel.active{
+        display: block !important;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .right-aside{/* The right container, containing all the items to be displayed when any navigation button is clicked.  */
+        display: non;
+        width: 100%;
+        height: 705px;
+        float:none;
+        background-color: transparent;
+        box-shadow: 1px 1px 8px black ;
+        margin-right: 16px;
+        margin-top: 0px;
+        position: relative;
+        top: 400px;
+    }
+    
+    
+    
+    
+    .home{
+        display: none;
+    }
+    
+    
+    
+    
+    
+    
+    /* About style */
+    
+    .about-text-container{
+        margin: 0px auto;
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        bottom: -90px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+    }
+    
+    .about-heading h2{/* About Heading style */
+        font-size: 30px;
+        text-shadow: 1px 1px 2px white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .about-heading{/* About Heading container */
+        position: relative;
+        top: 100px;
+        width: 100%;
+        border-bottom: 0px;
+        opacity:1;
+        animation-name: about-heading;
+        animation-duration: 0s;
+        animation-delay: 0s;
+    }
+    @keyframes about-heading{
+        0%{opacity: 1;}
+        100%{opacity: 1;}
+    }
+    .about-text1{/* About Main text-1 */
+        position: relative;
+        text-align: center;
+        animation-name: about-me1;
+        animation-duration: 0s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    
+    }
+    
+    @keyframes about-me1{
+        0%{top:-0px; opacity: 1;}
+        
+        100%{top: 0px; opacity: 1;}
+    }
+    
+    .about-text2{/* About main text-2 */
+        position: relative;
+        top: 0px;
+        text-align: center;
+        animation-name: about-me2;
+        animation-duration: 0s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes about-me2{
+        0%{left:0px;}
+        100%{left:0px;}
+    }
+    
+    
+    .about-footer{/* About footer container */
+        position: absolute;
+        top: -165px;
+        color: blue;
+        text-align: center;
+        text-shadow: 1px 1px silver;
+        width: 100%;
+        border-top: 0px solid ;
+        border-bottom: 2px solid silver;
+        opacity:0;
+        animation-name: about-heading;
+        animation-duration: 0s;
+        animation-timing-function: ease-out;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+        z-index: 10;
+    }
+    
+    .about-footer-text{/* About footer text */
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 20px;
+        font-size: 100%;
+        letter-spacing: 0.5px;
+    }
+    
+    .about-footer-text a{/* About inline text links */
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Project styles */
+    #projects{
+        border-top: 2px solid silver;
+        border-bottom: 2px solid silver;
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 30px;
+        margin-top: 80px;
+    }
+
+    .projects{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        position: relative;
+        top: 0px;
+    }
+    .project-row-1{/* project rows */
+        margin: 0px 15px 0px 15px;
+        margin-top: 00px;
+    }
+    .project-row-2{/* project rows */
+        margin: 0px 15px 0px 15px;
+        margin-top: 0px;
+    }
+    .card{/* project cards */
+        height: 195px;
+        background-color: whitesmoke;
+    }
+    .card-title img{/* project card title images */
+        width: 50%;
+        height: 40px;
+    }
+    .btn{/* card buttons */
+        background-color: blue;
+        opacity: 0.8;
+    }
+    
+    .card-1{/* Card-1 */
+        opacity: 0;
+        animation-name: projects-cards;
+        animation-duration: 0s;
+        animation-delay: 0s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        margin-bottom: 15px;
+    }
+    
+    .card-2{/* Card-2 */
+        opacity: 0;
+        animation-name: projects-cards;
+        animation-duration: 0s;
+        animation-delay: 0s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        margin-bottom: 15px;
+    }
+    
+    .card-3{/* Card-3 */
+        opacity: 0;
+        animation-name: projects-cards;
+        animation-duration: 0s;
+        animation-delay: 0s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        margin-bottom: 15px;
+        
+    }
+    
+    .card-4{/* Card-4 */
+        opacity: 0;
+        animation-name: projects-cards;
+        animation-duration: 0s;
+        animation-delay: 0s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        margin-bottom: 15px;
+    }
+    
+    .card-5{/* Card-5 */
+        opacity: 0;
+        animation-name: projects-cards;
+        animation-duration: 0s;
+        animation-delay: 0s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        margin-bottom: 15px;
+    }
+    
+    .card-6{/* Card-6 */
+        opacity: 0;
+        animation-name: projects-cards;
+        animation-duration: 0s;
+        animation-delay: 0s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        
+    }
+    
+    @keyframes projects-cards{/* Cards animation */
+        0%{opacity: 1;}
+        100%{opacity: 1;}
+    }
+    
+
+
+
+    #hobbies{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+    /* Contact-me style */
+    .form-container{
+        width: 90%;
+        padding: 20px;
+        margin-top: 40px;
+    }
+    @keyframes form{
+        0%{transform: rotateY(0deg);}
+    }
+    
+
+
+
+
+
+
+    .social-media-icon-container{
+        margin-left: 20px;
+        margin-right: 10px;
+        margin-top: 20px;
+        position:relative;
+        bottom: 270px;
+        text-align: right;
+        width: 12%;
+        float: right;
+        
+    }
+    .social-media-icons i{
+        font-size: 40px;
+        padding-left: 0px;
+        
+    }
+    .social-media-icons{
+        text-decoration: none;
+        color: rgb(86, 86, 255);
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        display:grid;
+        margin-top: 20px;
+        z-index: 20;
+        
+        
+    }
+    .social-media-icons:hover{
+        color: blue;
+        border: 1px thin white;
+    }
+
+
+    
+    
+    .all-right-reserved{
+        display: none;
+        color: white;
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+
+
+
+
+    
+    
+}
+
+
+
+
+/* Mobile view  */
+@media (max-width:260px){
+
+
+
+
+    .main-container{/* The main container  */
+
+        background-color: black;
+        overflow: visible;
+        padding-bottom: 1750px;
+    }
+}
