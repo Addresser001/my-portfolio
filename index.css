@@ -154,7 +154,7 @@ ul li a:focus{
 
 .right-aside{/* The right container, containing all the items to be displayed when any navigation button is clicked.  */
     width: 83%;
-    height: 705px;
+    height: 650px;
     float: right;
     background-color: black;
     box-shadow: 1px 1px 8px black ;
@@ -168,18 +168,18 @@ ul li a:focus{
 
 
 .d-block{/* For the Home display items, especially for the carosel images  */
-    height: 705px;
+    height: 650px;
     opacity: 0.5;
 }
 
 #first-auto-typewriting-text{
-    font-size: 68px;
+    font-size: 50px;
 }
 #second-auto-typewriting-text{
-    font-size: 51px;
+    font-size: 40px;
 }
 #third-auto-typewriting-text{
-    font-size: 58px;
+    font-size: 35px;
 }
 
 /* The auto typewriting for the home page  */
@@ -217,7 +217,7 @@ ul li a:focus{
     margin: 0px auto;
     width: 80%;
     position: relative;
-    bottom: 50px;
+    bottom: 70px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 }
@@ -229,7 +229,7 @@ ul li a:focus{
 
 .about-heading{/* About Heading container */
     position: relative;
-    top: 60px;
+    top: 30px;
     color: silver;
     text-align: center;
     width: 100%;
@@ -278,7 +278,7 @@ ul li a:focus{
 
 .about-footer{/* About footer container */
     position: relative;
-    top: 130px;
+    top: 100px;
     color: blue;
     text-align: center;
     width: 100%;
@@ -314,11 +314,11 @@ ul li a:focus{
 /* Project styles */
 .project-row-1{/* project rows */
     margin: 40px;
-    margin-top: 120px;
+    margin-top: 90px;
 }
 .project-row-2{/* project rows */
     margin: 40px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 .card{/* project cards */
     height: 200px;
@@ -356,7 +356,7 @@ ul li a:focus{
     
 }
 .card-text-1{
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 
